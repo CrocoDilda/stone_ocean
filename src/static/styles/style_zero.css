@@ -11,6 +11,14 @@
   box-sizing: border-box;
 }
 
+/* Убирает стрелочки инпутам при значении type="number"  */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 :focus, :active {
   outline: none;
 }

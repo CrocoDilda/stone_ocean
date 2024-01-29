@@ -7,20 +7,13 @@
 	<link rel="stylesheet" href="../static/styles/style_zero.css">
 	<link rel="stylesheet" href="../static/styles/global.css">
 	<link rel="stylesheet" href="../static/styles/style.css">
+	<link rel="shortcut icon" href="../static/icons/logo.svg">
 	<title>Stone Ocean</title>
 </head>
 <body>	
 	<header class="header container">
 		<a href="" class="header__logo-link">
-			<div class="logo__wrapper">
-				<div class="logo logo_small">
-					<p class="logo__text logo_small__text">SO</p>
-				</div>
-				<div class="logo__inner">
-					<p class="logo__title">Stone Ocean</p>
-					<p class="logo_subtitle">Acrylic products</p>
-				</div>
-			</div>
+			<img class="header__logo" src="../static/icons/small-logo.svg" alt="">
 		</a>
 		<nav class="header__nav">
 			<ul class="header__list">
@@ -58,9 +51,7 @@
 	</div>
 	<main>
 		<section class="hero">
-			<div class="logo">
-				<p class="logo__text">SO</p>
-			</div>
+			<img class="hero__logo" src="../static/icons/logo.svg" alt="" class="logotip">
 			<div class="hero__title-wrapper">
 				<h1 class="hero__title">Stone Ocean</h1>
 				<h2 class="hero__subtitle">Acrylic products</h2>
@@ -105,30 +96,56 @@
 				</ul>
 		</section>
 		<section class="gallery container">
+			<div class="gallery__background"><img src="../static/images/background-6.webp" alt="" class="gallery__background-image"></div>
 			<h2 class="gallery__title title">Галерея выполненных работ</h2>
 			<ul class="gallery__wrapper">
 				<li class="gallery__item">
-					<img src="../static/images/gallery/photo-1.jpeg" alt="" class="gallery__image">
+					<img src="../static/images/gallery/photo-1.webp" alt="" class="gallery__image">
 					<div class="gallery__inner">
 						<p class="gallery__class">Столешница</p>
 						<h3 class="gallery__name">Ресепшн из белого камня</h3>
 					</div>
 				</li>
 				<li class="gallery__item">
-					<img src="../static/images/gallery/photo-2.jpeg" alt="" class="gallery__image">
+					<img src="../static/images/gallery/photo-2.webp" alt="" class="gallery__image">
 					<div class="gallery__inner">
 						<p class="gallery__class">Кухня</p>
 						<h3 class="gallery__name">Кухня из белого камня со стеновыми панелями</h3>
 					</div>
 				</li>
 				<li class="gallery__item">
-					<img src="../static/images/gallery/photo-3.jpeg" alt="" class="gallery__image">
+					<img src="../static/images/gallery/photo-3.webp" alt="" class="gallery__image">
 					<div class="gallery__inner">
 						<p class="gallery__class">Кухня</p>
 						<h3 class="gallery__name">Кухня из чёрного камня со стеновыми панелями</h3>
 					</div>
 				</li>
+				
+
+
+				<li class="gallery__item">
+					<img src="../static/images/gallery/photo-4.webp" alt="" class="gallery__image">
+					<div class="gallery__inner">
+						<p class="gallery__class">Кухня</p>
+						<h3 class="gallery__name">Кухня из серого камня</h3>
+					</div>
+				</li>
+				<li class="gallery__item">
+					<img src="../static/images/gallery/photo-5.webp" alt="" class="gallery__image">
+					<div class="gallery__inner">
+						<p class="gallery__class">Кухня</p>
+						<h3 class="gallery__name">Кухня из белого камня со стеновыми панелями</h3>
+					</div>
+				</li>
+				<li class="gallery__item">
+					<img src="../static/images/gallery/photo-6.webp" alt="" class="gallery__image">
+					<div class="gallery__inner">
+						<p class="gallery__class">Кухня</p>
+						<h3 class="gallery__name">Кухня из белого камня со стеновыми панелями</h3>
+					</div>
+				</li>
 			</ul>
+			<button class="gallery__button button">Показать ещё</button>
 		</section>
 		<section class="services container">
 			<h3 class="services__title title">Наши услуги</h3>
@@ -159,39 +176,41 @@
 			</div>
 				<ul class="advantages__wrapper advantages__wrapper_work">
 					<li class="advantages__item">
-						<img src="../static/icons/advantages/water-drop.svg" alt="" class="advantages__image">
+						<img src="../static/icons/advantages/manufacture.svg" alt="" class="advantages__image">
 						<h4 class="advantages__card-titel">СОБСТВЕННОЕ ПРОИЗВОДСТВО</h4>
 						<p class="advantages__card-text text">Мы сами производим изделия, а не занимаемся перепродажей уже готовых изделий. Поэтому мы устанавливаем приемлемую стоимость и гарантируем высокое качество продукции</p>
 					</li>
 					<li class="advantages__item">
-						<img src="../static/icons/advantages/monolite.svg" alt="" class="advantages__image">
+						<img src="../static/icons/advantages/guarantee.svg" alt="" class="advantages__image">
 						<h4 class="advantages__card-titel">ГАРАНТИЯ НА ИЗДЕЛИЯ – 10 ЛЕТ</h4>
 						<p class="advantages__card-text text">Мы уверены в поставщиках материалов и в наших мастерах по работе с акриловым камнем, а потому смело даём гарантию 10 лет на всю продукцию!</p>
 					</li>
 					<li class="advantages__item">
-						<img src="../static/icons/advantages/wear-resistant.svg" alt="" class="advantages__image">
+						<img src="../static/icons/advantages/money.svg" alt="" class="advantages__image">
 						<h4 class="advantages__card-titel">НИКАКИХ ДОПЛАТ</h4>
 						<p class="advantages__card-text text">Любые элементы и доработки при заказе изделия из камня – БЕСПЛАТНО. Не нужно будет ничего доплачивать за бесшовное соединение, обработку кромок и т. д.</p>
 					</li>
 					<li class="advantages__item">
-						<img src="../static/icons/advantages/pores.svg" alt="" class="advantages__image">
+						<img src="../static/icons/advantages/speed.svg" alt="" class="advantages__image">
 						<h4 class="advantages__card-titel">ОТ ЗАКАЗА ДО УСТАНОВКИ ОТ 5 ДО 10 РАБОЧИХ ДНЕЙ</h4>
 						<p class="advantages__card-text text">Мы сами изготавливаем для Вас изделие, а также сами его привозим и устанавливаем. Отсутствие посредников позволяет нам существенно сократить сроки исполнения заказа</p>
 					</li>
 				</ul>
 		</section>
+		<section class="call">
+			<h3 class="call__title title">Закажите звонок сейчас и вам перезвонят в ближайшее время!</h3>
+			<form class="call__form">
+				<input class="call__input text" type="number" value="+7" placeholder="Ваш номер">
+				<label for="name">
+					<button class="call__button button">Заказать звонок</button> 
+				</label>
+			</form>
+		</section>
 	</main>
-	<div class="footer__background"></div>
 	<footer class="footer container">
-		<div class="logo__wrapper logo_white-wrapp">
-			<div class="logo logo_small logo_white-bg">
-				<p class="logo__text logo_small__text">SO</p>
-			</div>
-			<div class="logo__inner .logo_white-bg">
-				<p class="logo__title logo_white-text">Stone Ocean</p>
-				<p class="logo_subtitle logo_white-text">Acrylic products</p>
-			</div>
-		</div>
+		<a href="#" class="footer__logo">
+			<img src="../static/icons/small-logo_white.svg" alt="" class="footer__logo">
+		</a>
 		<nav class="footer__nav">
 			<ul class="footer__list">
 				<h4 class="footer__titles">Наша компания</h4>

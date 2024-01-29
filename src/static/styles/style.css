@@ -10,6 +10,12 @@
 	margin-left: 40px;
 }
 
+.hero__logo {
+	height: 240px;
+	justify-self: end;
+	align-self: center;
+}
+
 .hero__title {
 	position: relative;
 	font-size: 10.625rem;
@@ -116,25 +122,47 @@
 	text-align: center;
 }
 
-
 .gallery {
+	position: relative;
 	min-height: 400px;
 	padding-top: 80px;
 	margin-top: 80px;
 	padding-bottom: 80px;
-	background: var(--color-gold100);
+}
+
+.gallery__background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100vw;
+	z-index: -1;
+}
+
+.gallery__background-image {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
 
 .gallery__title{
 	text-align: center;
+	color: black;
+	font-size: 2.25rem;
+	font-weight: 500;
 }
 
 .gallery__wrapper {
 	display: grid;
 	grid-auto-flow: column;
 	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
 	justify-items: center;
+	gap: 50px 0;
+	background-color: #ffe79f80;
 	margin-top: 80px;
+	padding: 60px 20px;
+	border-radius: 30px;	
 }
 
 .gallery__item {
@@ -150,21 +178,21 @@
 
 .gallery__inner {
 	margin-top: 5px;
-
-}
-
-.gallery__class {
-
 }
 
 .gallery__name {
-
     font-size: 1.25rem;
 	margin-top: 20px;
 }
 
+.gallery__button {
+	display: block;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
 .services {
-	padding-top: 80px;
+	padding-top: 120px;
 	padding-bottom: 80px;
 	margin-bottom: 150px;
 }
@@ -179,11 +207,11 @@
 	grid-auto-flow: column;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 0 30px;
-	margin-top: 40px;
+	margin-top: 80px;
 }
 
 .services__card {
-	border: 1px solid var(--color-gray);
+	border: 1px solid var(--color-gold200);
 	border-radius: 20px;
 	justify-self: center;
 	width: 100%;
@@ -192,7 +220,7 @@
 }
 
 .services__card:hover {
-	border: 8px solid var(--color-gray);
+	border: 8px solid var(--color-gold200);
 }
 
 .services__link {
@@ -211,3 +239,32 @@
 	font-weight: 500;
 	font-size: 1.5rem;
 }
+
+.call {
+	padding-top: 100px;
+}
+
+.call__title {
+	text-align: center;
+}
+
+.call__form {
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: center;
+	margin-top: 60px;
+}
+
+.call__input {
+	border: 2px solid var(--color-gold200);
+	border-radius: 20px 0 0 20px;
+	padding: 10px 15px;
+}
+
+.call__button {
+	height: 100%;
+	border-left: none;
+	border-radius: 0 20px 20px 0;
+	padding: 0 15px;
+}
+
