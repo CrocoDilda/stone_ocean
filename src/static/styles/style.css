@@ -1,70 +1,3 @@
-.hero {
-	display: grid;
-	grid-auto-flow: column;
-	position: relative;
-	top: -600px;
-}
-
-.hero__title-wrapper {
-	position: relative;
-	justify-self: start;
-	margin-left: 40px;
-}
-
-.hero__title-wrapper::before {
-	content: '';
-	position: absolute;
-	bottom: 18px;
-	height: 240px;
-	width: 5px;
-	border-radius: 3px;
-	background-color: black;
-}
-
-.hero__logo {
-	height: 240px;
-	justify-self: end;
-	align-self: center;
-}
-
-.hero__title {
-	position: relative;
-	font-size: 10.625rem;
-	font-weight: 300;
-	z-index: 2;
-	text-align: center;
-	justify-self: start;
-	margin-left: 40px;
-}
-
-.hero__subtitle {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	font-size: 3.75rem;
-	font-weight: 300;
-	z-index: 2;
-	justify-self: start;
-}
-
-.hero__subtitle::after{
-	content: '';
-	width: 100px;
-	height: 3px;
-	background-color: black;
-	margin-left: 30px;
-	border-radius: 2px;
-}
-
-.hero__subtitle::before{
-	content: '';
-	width: 100px;
-	height: 3px;
-	background-color: black;
-	margin-right: 30px;
-	border-radius: 2px;
-}
 
 .advantages {
 	margin-top: -100px;
@@ -156,34 +89,51 @@
 .gallery__wrapper {
 	display: grid;
 	grid-auto-flow: column;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto 1fr;
 	justify-items: center;
 	gap: 50px 0;
-	background-color: #ffe79f80;
+	background-color: #ffe79f50;
 	margin-top: 80px;
 	padding: 60px 20px;
 	border-radius: 30px;	
 }
 
+.gallery__class {
+	grid-column: 1 / 3;
+	color: black;
+	font-weight: 500;
+}
+
 .gallery__item {
-	max-width: 400px;
+	position: relative;
+	width: 90%;
+}
+
+.gallery__fone {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	background-color: #c1945390;
+	border-radius: 20px;
+}
+
+.gallery__more {
+	
 }
 
 .gallery__image {
-	width: 400px;
-	height: 280px;
+	width: 100%;
+	height: 100%;
 	border-radius: 20px;
 	object-fit: cover;
 }
 
 .gallery__inner {
 	margin-top: 5px;
-}
-
-.gallery__name {
-    font-size: 1.25rem;
-	margin-top: 20px;
 }
 
 .gallery__button {

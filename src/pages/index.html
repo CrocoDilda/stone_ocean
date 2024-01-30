@@ -52,7 +52,9 @@
 	<main>
 		<button class="button__fixed button">Закажите звонок</button>
 		<section class="hero">
-			<img class="hero__logo" src="../static/icons/logo.svg" alt="" class="logotip">
+			<div class="hero__box">
+				<img class="hero__logo" src="../static/icons/logo.svg" alt="" class="logotip">
+			</div>
 			<div class="hero__title-wrapper">
 				<h1 class="hero__title">Stone Ocean</h1>
 				<h2 class="hero__subtitle">Acrylic products</h2>
@@ -99,53 +101,35 @@
 		<section class="gallery container">
 			<div class="gallery__background"><img src="../static/images/background-6.webp" alt="" class="gallery__background-image"></div>
 			<h2 class="gallery__title title">Галерея выполненных работ</h2>
-			<ul class="gallery__wrapper">
-				<li class="gallery__item">
-					<img src="../static/images/gallery/photo-1.webp" alt="" class="gallery__image">
-					<div class="gallery__inner">
-						<p class="gallery__class">Столешница</p>
-						<h3 class="gallery__name">Ресепшн из белого камня</h3>
-					</div>
+			<div class="gallery__box">
+			<ul data-wrapper class="gallery__wrapper">
+				<h2 class="gallery__class title">Кухни</h2>
+				<li data-item="1" class="gallery__item">
+					<img src="../static/images/gallery/photo-23.webp" alt="" class="gallery__image">
 				</li>
-				<li class="gallery__item">
-					<img src="../static/images/gallery/photo-2.webp" alt="" class="gallery__image">
-					<div class="gallery__inner">
-						<p class="gallery__class">Кухня</p>
-						<h3 class="gallery__name">Кухня из белого камня со стеновыми панелями</h3>
-					</div>
-				</li>
-				<li class="gallery__item">
-					<img src="../static/images/gallery/photo-3.webp" alt="" class="gallery__image">
-					<div class="gallery__inner">
-						<p class="gallery__class">Кухня</p>
-						<h3 class="gallery__name">Кухня из чёрного камня со стеновыми панелями</h3>
-					</div>
-				</li>
-				
-
-
-				<li class="gallery__item">
-					<img src="../static/images/gallery/photo-4.webp" alt="" class="gallery__image">
-					<div class="gallery__inner">
-						<p class="gallery__class">Кухня</p>
-						<h3 class="gallery__name">Кухня из серого камня</h3>
-					</div>
-				</li>
-				<li class="gallery__item">
-					<img src="../static/images/gallery/photo-5.webp" alt="" class="gallery__image">
-					<div class="gallery__inner">
-						<p class="gallery__class">Кухня</p>
-						<h3 class="gallery__name">Кухня из белого камня со стеновыми панелями</h3>
-					</div>
-				</li>
-				<li class="gallery__item">
-					<img src="../static/images/gallery/photo-6.webp" alt="" class="gallery__image">
-					<div class="gallery__inner">
-						<p class="gallery__class">Кухня</p>
-						<h3 class="gallery__name">Кухня из белого камня со стеновыми панелями</h3>
-					</div>
+				<li data-item="1" class="gallery__item">
+					<img src="../static/images/gallery/photo-18.webp" alt="" class="gallery__image">
 				</li>
 			</ul>
+			<ul class="gallery__wrapper">
+				<h2 class="gallery__class title">Подоконники</h2>
+				<li class="gallery__item">
+					<img src="../static/images/gallery/photo-17.webp" alt="" class="gallery__image">
+				</li>
+				<li class="gallery__item">
+					<img src="../static/images/gallery/photo-29.webp" alt="" class="gallery__image">
+				</li>
+			</ul>
+			<ul class="gallery__wrapper">
+				<h2 class="gallery__class title">Ванные комнаты</h2>
+				<li class="gallery__item">
+					<img src="../static/images/gallery/photo-28.webp" alt="" class="gallery__image">
+				</li>
+				<li class="gallery__item">
+					<img src="../static/images/gallery/photo-30.webp" alt="" class="gallery__image">
+				</li>
+			</ul>
+			</div>
 			<button class="gallery__button button">Показать ещё</button>
 		</section>
 		<section class="services container">
@@ -183,8 +167,8 @@
 					</li>
 					<li class="advantages__item">
 						<img src="../static/icons/advantages/guarantee.svg" alt="" class="advantages__image">
-						<h4 class="advantages__card-titel">ГАРАНТИЯ НА ИЗДЕЛИЯ – 10 ЛЕТ</h4>
-						<p class="advantages__card-text text">Мы уверены в поставщиках материалов и в наших мастерах по работе с акриловым камнем, а потому смело даём гарантию 10 лет на всю продукцию!</p>
+						<h4 class="advantages__card-titel">ОБСЛУЖИВАНИЕ</h4>
+						<p class="advantages__card-text text">Бесплатное обслуживание изделий в течении года, а по прошествию этого срока мы предоставляем скидки на шлифовку - полировку и ремонт для наших клиентов</p>
 					</li>
 					<li class="advantages__item">
 						<img src="../static/icons/advantages/money.svg" alt="" class="advantages__image">
@@ -209,9 +193,34 @@
 		</section>
 	</main>
 	<footer class="footer container">
-		<a href="#" class="footer__logo">
-			<img src="../static/icons/small-logo_white.svg" alt="" class="footer__logo">
-		</a>
+		<div class="footer__box">		
+				<a href="#" class="footer__logo">
+					<img src="../static/icons/small-logo_white.svg" alt="" class="footer__logo">
+				</a>
+				<ul class="footer__contacts">
+					<li class="footer__social-network">
+						<a href="#" class="footer__link">
+						<svg class="footer__icon tg">
+							<use xlink:href="../static/icons/footer/sprite.svg#telegram"></use>
+						</svg>
+					</a>
+					</li>
+					<li class="footer__social-network">
+						<a href="#" class="footer__link">
+							<svg class="footer__icon vk">
+								<use xlink:href="../static/icons/footer/sprite.svg#vk"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="footer__social-network">
+						<a href="#" class="footer__link">
+							<svg class="footer__icon wa">
+								<use xlink:href="../static/icons/footer/sprite.svg#whatsapp"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+		</div>
 		<nav class="footer__nav">
 			<ul class="footer__list">
 				<h4 class="footer__titles">Наша компания</h4>
