@@ -6,8 +6,19 @@
 }
 
 .hero__title-wrapper {
+	position: relative;
 	justify-self: start;
 	margin-left: 40px;
+}
+
+.hero__title-wrapper::before {
+	content: '';
+	position: absolute;
+	bottom: 18px;
+	height: 240px;
+	width: 5px;
+	border-radius: 3px;
+	background-color: black;
 }
 
 .hero__logo {
@@ -23,6 +34,7 @@
 	z-index: 2;
 	text-align: center;
 	justify-self: start;
+	margin-left: 40px;
 }
 
 .hero__subtitle {
@@ -52,17 +64,6 @@
 	background-color: black;
 	margin-right: 30px;
 	border-radius: 2px;
-}
-
-.background {
-	width: 100vw;
-	height: 100vh;
-}
-
-.background__image {
-	object-fit: cover;
-	height: 100%;
-	width: 100%;
 }
 
 .advantages {
